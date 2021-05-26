@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import styled from "styled-components";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import HomePageManager from "./components/pages/home-page/HomePageManager";
+import Navbar from "./components/layout/navbar/Navbar";
+import Footer from "./components/layout/footer/Footer";
 
-function App() {
+const Wrapper = styled.div`
+  height: 100%;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={HomePageManager} />
+          <Redirect from="*" to="/" />
+        </Switch>
+        <Footer />
+      </Router>
+    </Wrapper>
   );
-}
+};
 
 export default App;

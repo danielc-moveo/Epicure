@@ -1,0 +1,52 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 100px 180px 117px 218px;
+  background-color: white;
+  @media screen and (max-width: 900px) {
+    margin: 71px 20px 97px 20px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const ChefOfTheWeekImage = styled.div`
+  height: 338px;
+  margin: 0 20px 59px 20px;
+  text-align: center;
+  min-width: 433px;
+  border: 1px solid black;
+  @media screen and (max-width: 900px) {
+    margin: 0 auto 20px auto;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+`;
+
+export const ChefDescription = styled.div`
+  max-width: 300px;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+`;
+
+export const CollageWrapper = styled.div``;
+
+export const chefDescriptionStyles = {
+  margin: "0 0 42px 0",
+};
+
+export const collageDescriptionStyles = {
+  margin: "0 0 23px 0",
+};
