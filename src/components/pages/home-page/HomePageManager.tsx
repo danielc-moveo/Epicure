@@ -4,7 +4,7 @@ import Collage from "../../layout/homepage/collage/Collage";
 import IconsMeaning from "../../layout/homepage/icon-meaning/IconMeaning";
 import { CollageWrapper, Wrapper, collageDescriptionStyles } from "./Styles";
 import ChefOfTheWeek from "../../layout/homepage/chef-of-the-week/ChefOfTheWeek";
-import About from "../../layout/homepage/abous/About";
+import About from "../../layout/homepage/about/About";
 
 const HomePageManager = () => {
   return (

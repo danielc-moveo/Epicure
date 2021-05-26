@@ -6,12 +6,13 @@ const footerItems = [
   { title: "Privacy Policy", path: "/privacy" },
 ];
 
-
 const Footer = () => {
   return (
     <Wrapper>
       {footerItems.map(({ title, path }, i) => (
-        <FooterLink to={path}>{title}</FooterLink>
+        <FooterLink key={i} to={path}>
+          {title}
+        </FooterLink>
       ))}
     </Wrapper>
   );

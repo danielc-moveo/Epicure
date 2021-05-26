@@ -1,6 +1,7 @@
 import { Description } from "../../../utils/CommonStyles";
 import SearchBox from "../../../utils/search-box/SearchBox";
-import { Container, Box ,descriptionStyles} from "./Styles";
+import { SearchBoxStyles } from "./helper";
+import { Container, Box, descriptionStyles } from "./Styles";
 
 const SearchSection = () => {
   return (
@@ -10,7 +11,7 @@ const SearchSection = () => {
           Epicure works with the top
           <br /> chef restaurants in Tel Aviv
         </Description>
-        <SearchBox />
+        <SearchBox styles={SearchBoxStyles} isNavBar={false} />
       </Box>
     </Container>
   );
