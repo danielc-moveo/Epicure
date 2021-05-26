@@ -7,7 +7,6 @@ export const Nav = styled.div`
   display: flex;
   height: 53px;
   border: 1px solid black;
-
   @media screen and (max-width: 768px) {
     height: 46px;
   }
@@ -24,6 +23,7 @@ export const LeftGroup = styled.div`
   }
   @media screen and (max-width: 768px) {
     margin-left: 20px;
+    width: 50%;
   }
 `;
 
@@ -35,6 +35,11 @@ export const RightGroup = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-right: 20px;
+    margin-left: auto;
+  }
+  
+  @media screen and (max-width: 450px) {
+    margin-left: 46px;
   }
 `;
 
@@ -42,12 +47,7 @@ export const NavLink = styled(Link)<NavLinkProps>`
   margin: ${({ styles }) => styles.margin};
   text-decoration: none;
   color: ${colors.black};
-  //   font-family: HelveticaNeue;
   font-size: ${({ styles }) => styles.fontSize};
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: ${({ styles }) => styles.letterSpacing};
 
   @media screen and (max-width: 768px) {
@@ -73,15 +73,14 @@ export const Logo = styled.img`
   @media screen and (max-width: 768px) {
     max-width: 31px;
     max-height: 30px;
-    position: absolute;
-    left: 50%;
+    margin-left: auto;
   }
 `;
 
 export const HamburgerIcon = styled.img`
-  width: 18px;
-  height: 14px;
-  @media screen and (min-width: 768px) {
+  max-width: 18px;
+  max-  height: 14px;
+  @media screen and (min-width: 769px) {
     display: none;
   }
 `;

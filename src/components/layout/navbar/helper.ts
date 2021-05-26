@@ -38,7 +38,7 @@ export const rightGroupIcons = [
     styles: {
       width: "23px",
       height: "23px",
-      margin: "0 28px",
+      margin: "0 26px",
     },
   },
   {

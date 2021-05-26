@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../../../utils/CommonStyles";
-
+import backGroundMock from "./assets/hero-picture@2x.png";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  align-items:center;
+  background-image: url(${backGroundMock});
+  background-size: cover;
+  min-height:696px;
 `;
 
 export const Box = styled.div`
@@ -12,12 +15,10 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 70px 0px;
   background-color: ${colors.white_two};
   opacity: 0.9;
   border: 1px solid black;
-  padding: 40px 0;
-  width: 80%;
+  height:222px;
 `;
 
 export const descriptionStyles = {

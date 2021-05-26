@@ -13,11 +13,6 @@ export const FooterLink = styled(Link)`
   margin: 0 45px;
   text-decoration: none;
   color: ${colors.black};
-  //   font-family: HelveticaNeue;
   font-size: 18px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.13px;
 `;

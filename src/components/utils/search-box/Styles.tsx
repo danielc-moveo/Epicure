@@ -8,7 +8,7 @@ export const InputContainer = styled.div<InputProps>`
   width: ${({ styles }) => styles.width};
   height: ${({ styles }) => styles.height};
   padding: 7px 13px 5px 16px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1190px) {
     display: ${({ isNavBar }) => (isNavBar ? "none" : "block")};
   }
 `;
@@ -21,10 +21,15 @@ export const Input = styled.input<InputProps>`
 `;
 
 export const SearchIconOnMobile = styled.img`
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media screen and (min-width: 1190px) {
     display: none;
   }
 `;
@@ -32,4 +37,5 @@ export const SearchIconOnMobile = styled.img`
 export const SearchIcon = styled.img`
   width: 22px;
   height: 22px;
+ 
 `;

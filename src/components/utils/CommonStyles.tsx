@@ -12,11 +12,7 @@ export interface DescriptionStyle {
   };
 }
 export const Description = styled.span<DescriptionStyle>`
-  // font-family: HelveticaNeue;
   font-size: 30px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: 1.25px;
   color: ${colors.black};
