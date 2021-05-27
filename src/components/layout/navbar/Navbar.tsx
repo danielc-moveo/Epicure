@@ -14,7 +14,7 @@ import {
 } from "./Styles";
 
 const Navbar = () => {
-  const handleIconClick = (path: string) => {
+  const handleRedirect = (path: string) => {
     console.log(path);
   };
 
@@ -22,7 +22,7 @@ const Navbar = () => {
     <Nav>
       <LeftGroup>
         <HamburgerIcon src={Hamburger} />
-        <Logo src={logo} onClick={() => handleIconClick("/")} alt="" />
+        <Logo src={logo} onClick={() => handleRedirect("/")} alt="" />
         {leftGroupLinks.map(({ title, styles, path }, i) => (
           <NavLink key={i} styles={styles} to={path}>
             {title}
@@ -36,7 +36,7 @@ const Navbar = () => {
             isMainLogo={false}
             alt=""
             src={src}
-            onClick={() => handleIconClick(path)}
+            onClick={() => handleRedirect(path)}
             key={i}
             styles={styles}
           />

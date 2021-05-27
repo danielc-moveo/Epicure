@@ -1,6 +1,12 @@
-import { Input, SearchIconOnMobile, InputContainer,SearchIcon } from "./Styles";
+import {
+  Input,
+  SearchIconSmallerScreen,
+  InputContainer,
+  SearchIcon,
+} from "./Styles";
 import { SearchBoxProps } from "./interface";
 import Icon from "./assets/Search.svg";
+import { SEARCH_PLACEHOLDER } from "../constants";
 
 const SearchBox = ({ styles, isNavBar }: SearchBoxProps) => {
   return (
@@ -9,12 +15,11 @@ const SearchBox = ({ styles, isNavBar }: SearchBoxProps) => {
         <Input
           styles={styles}
           isNavBar={isNavBar}
-          placeholder="Search for restaurant cuisine, chef"
+          placeholder={SEARCH_PLACEHOLDER}
         />
         <SearchIcon src={Icon} alt="" />
       </InputContainer>
-
-      <SearchIconOnMobile  src={Icon} alt="" />
+      <SearchIconSmallerScreen src={Icon} alt="" />
     </>
   );
 };

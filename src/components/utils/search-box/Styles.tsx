@@ -15,12 +15,12 @@ export const InputContainer = styled.div<InputProps>`
 export const Input = styled.input<InputProps>`
   border: none;
   width: 100%;
-  &:focus{
-      outline:none;
+  &:focus {
+    outline: none;
   }
 `;
 
-export const SearchIconOnMobile = styled.img`
+export const SearchIconSmallerScreen = styled.img`
   width: 22px;
   height: 22px;
 
@@ -37,5 +37,4 @@ export const SearchIconOnMobile = styled.img`
 export const SearchIcon = styled.img`
   width: 22px;
   height: 22px;
- 
 `;
