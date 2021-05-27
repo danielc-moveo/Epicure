@@ -6,7 +6,6 @@ import styled from "styled-components";
 export const Nav = styled.div`
   display: flex;
   height: 53px;
-  border: 1px solid black;
   @media screen and (max-width: 768px) {
     height: 46px;
   }
@@ -37,10 +36,6 @@ export const RightGroup = styled.div`
     margin-right: 20px;
     margin-left: auto;
   }
-  
-  @media screen and (max-width: 450px) {
-    margin-left: 46px;
-  }
 `;
 
 export const NavLink = styled(Link)<NavLinkProps>`
@@ -64,6 +59,11 @@ export const RightGroupIcon = styled.img<IconProps>`
     width: 18px;
     height: 18px;
   }
+
+  @media screen and (max-width: 320px) {
+    margin:0 0 0 13px;
+    ;
+  }
 `;
 
 export const Logo = styled.img`
@@ -79,7 +79,7 @@ export const Logo = styled.img`
 
 export const HamburgerIcon = styled.img`
   max-width: 18px;
-  max-  height: 14px;
+  max-height: 14px;
   @media screen and (min-width: 769px) {
     display: none;
   }
