@@ -57,9 +57,13 @@ export const Box = styled.div`
       font-size: 13px;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    width: 300px;
+  }
 `;
 
 export const descriptionStyles = {
   margin: "41px 0 18px 0",
-  textAlign:"center",
+  textAlign: "center",
 };
