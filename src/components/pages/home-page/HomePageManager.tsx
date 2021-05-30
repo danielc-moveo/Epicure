@@ -6,7 +6,6 @@ import ChefOfTheWeek from "../../layout/homepage/chef-of-the-week/ChefOfTheWeek"
 import About from "../../layout/homepage/about/About";
 import { popularRestaurants, signatureDishes,chefOfTheWeekRestaurants } from "./mock/collage-mock";
 import TopRestaurants from "../../layout/homepage/top-restaurants/TopRestaurants";
-import { CardProps } from "../../utils/card/Styles";
 
 const HomePageManager = () => {
   return (

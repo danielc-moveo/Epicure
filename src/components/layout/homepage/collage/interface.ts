@@ -7,4 +7,5 @@ export interface CollageProps {
     textAlign: string;
   };
   cardsData: CardProps[];
+  isPopularRestaurant: boolean;
 }

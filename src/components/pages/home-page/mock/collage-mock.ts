@@ -1,18 +1,19 @@
 import { CardProps } from "../../../utils/card/Styles";
+import ClaroImage from "./assets/claro.png";
 
 export const popularRestaurants: CardProps[] = [
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     textBold: "Claro",
     text: "Ran Shmuel",
   },
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     textBold: "Lumina",
     text: "Meir Adoni",
   },
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     textBold: "Tiger Lilly",
     text: "Yarin Green",
   },
@@ -20,24 +21,26 @@ export const popularRestaurants: CardProps[] = [
 
 export const signatureDishes: CardProps[] = [
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     header: "Tiger Lilly",
     textBold: "Pad Ki Mao",
     text: `Shrimps, Glass Noodles, Kemiri Nuts, 
       Shallots,   Lemon Grass, Magic  Chili Brown Coconut`,
     price: 88,
+    alerts: ["spicy", "vegan"],
   },
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     header: "Kab Mem",
     textBold: "Garbanzo Frito",
     text: `Polenta fingers, veal cheek,
     magic chili cured lemon
     cream, yellow laksa`,
     price: 98,
+    alerts: ["vegan"],
   },
   {
-    imgSrc: "",
+    imgSrc: ClaroImage,
     header: "Popina",
     textBold: "Smoked Pizza",
     text: `Basil dough, cashew "butter", 

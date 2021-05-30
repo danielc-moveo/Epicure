@@ -5,6 +5,7 @@ export const colors = {
   black: "black",
   sand: "rgba(232,196,122,0.8)",
   white_two: "#fafafa",
+  beige: "#f9f4ea",
 };
 
 export const Description = styled.span<DescriptionStyle>`

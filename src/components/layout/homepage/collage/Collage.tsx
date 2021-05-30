@@ -3,9 +3,14 @@ import { Description } from "../../../utils/common/CommonStyles";
 import { CollageProps } from "./interface";
 import { CardsContainer, Wrapper } from "./Styles";
 
-const Collage = ({ title, descriptionStyles, cardsData }: CollageProps) => {
+const Collage = ({
+  title,
+  descriptionStyles,
+  cardsData,
+  isPopularRestaurant,
+}: CollageProps) => {
   return (
-    <Wrapper>
+    <Wrapper isPopularRestaurant={isPopularRestaurant}>
       <Description {...descriptionStyles}>{title}</Description>
       <CardsContainer>
         {cardsData &&

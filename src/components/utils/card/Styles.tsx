@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../common/CommonStyles";
 
 export interface CardProps {
   imgSrc: string;
@@ -7,10 +8,14 @@ export interface CardProps {
   dish?: string;
   text?: string;
   price?: number;
+  alerts?: string[];
 }
 // temporary styles
-export const Card = styled.div`
-  height: 300px;
-  border: 1px solid black;
+export const Card = styled.div<{ isPopularRestaurant: boolean }>`
   margin: 0 11px;
+  background-color: ${colors.beige};
+`;
+
+export const TextBold = styled.span`
+  margin-top: 10px;
 `;

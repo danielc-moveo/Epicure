@@ -24,6 +24,7 @@ const ChefOfTheWeek = ({ cardsData }: { cardsData: CardProps[] }) => {
         </ChefDescription>
       </Container>
       <Collage
+        isPopularRestaurant={false}
         cardsData={cardsData}
         descriptionStyles={collageDescriptionStyles}
         title={"Yossis restaurants"}

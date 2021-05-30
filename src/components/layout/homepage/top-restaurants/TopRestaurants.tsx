@@ -4,9 +4,6 @@ import { collageDescriptionStyles } from "../chef-of-the-week/Styles";
 import Collage from "../collage/Collage";
 import { TopRestaurantsProps } from "./interface";
 
-
-  
-
 export const CollagesWrapper = styled.div`
   margin: 140px 169px 0 169px;
   @media screen and (max-width: 425px) {
@@ -14,22 +11,25 @@ export const CollagesWrapper = styled.div`
   }
 `;
 const TopRestaurants = ({
-    popularRestaurants,signatureDishes
-}:TopRestaurantsProps) => {
-    return (
-        <CollagesWrapper>
+  popularRestaurants,
+  signatureDishes,
+}: TopRestaurantsProps) => {
+  return (
+    <CollagesWrapper>
       <Collage
-          descriptionStyles={collageDescriptionStyles}
-          title={POPULAR_RESTAURANTS}
-          cardsData={popularRestaurants}
-        />
-        <Collage
-          descriptionStyles={collageDescriptionStyles}
-          title={SIGNATURE_DISH}
-          cardsData={signatureDishes}
-        />            
-        </CollagesWrapper>
-    )
-}
+        isPopularRestaurant={true}
+        descriptionStyles={collageDescriptionStyles}
+        title={POPULAR_RESTAURANTS}
+        cardsData={popularRestaurants}
+      />
+      <Collage
+        isPopularRestaurant={false}
+        descriptionStyles={collageDescriptionStyles}
+        title={SIGNATURE_DISH}
+        cardsData={signatureDishes}
+      />
+    </CollagesWrapper>
+  );
+};
 
-export default TopRestaurants
+export default TopRestaurants;
