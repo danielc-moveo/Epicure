@@ -1,7 +1,14 @@
-import { Card } from "./Styles";
+import styled from "styled-components";
+import { Card, CardProps } from "./Styles";
 
-const CardHome = () => {
-  return <Card>Dummy Home Card</Card>;
+export const Header = styled.span``;
+
+const CardHome = ({ header, imgSrc, textBold, text, price }: CardProps) => {
+  return (
+    <Card>
+      {header && <Header> header</Header>}
+    </Card>
+  );
 };
 
 export default CardHome;

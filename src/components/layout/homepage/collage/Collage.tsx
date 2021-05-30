@@ -3,14 +3,13 @@ import { Description } from "../../../utils/common/CommonStyles";
 import { CollageProps } from "./interface";
 import { CardsContainer, Wrapper } from "./Styles";
 
-const Collage = ({ title, descriptionStyles }: CollageProps) => {
+const Collage = ({ title, descriptionStyles, cardsData }: CollageProps) => {
   return (
     <Wrapper>
       <Description {...descriptionStyles}>{title}</Description>
       <CardsContainer>
-        <CardHome />
-        <CardHome />
-        <CardHome />
+        {cardsData &&
+          cardsData.map((data, i) => <CardHome {...data} key={i} />)}
       </CardsContainer>
     </Wrapper>
   );
