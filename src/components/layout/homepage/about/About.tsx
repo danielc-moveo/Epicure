@@ -1,17 +1,17 @@
-import { Description } from "../../../utils/CommonStyles";
+import { Description } from "../../../utils/common/CommonStyles";
 import {
   Container,
   Wrapper,
   AboutText,
   Logo,
   descriptionStyles,
-} from "./styles";
+} from "./Styles";
 
 const About = () => {
   return (
     <Wrapper>
       <Container>
-        <Description styles={descriptionStyles}>About us</Description>
+        <Description {...descriptionStyles}> About us</Description>
         <AboutText>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, saepe.
           Doloribus quo, hic libero ab laudantium voluptas nisi laborum incidunt

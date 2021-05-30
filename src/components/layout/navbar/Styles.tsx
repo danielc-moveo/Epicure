@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { colors } from "../../utils/CommonStyles";
+import { colors } from "../../utils/common/CommonStyles";
 import { NavLinkProps, IconProps } from "./interface";
 import styled from "styled-components";
 
@@ -32,6 +32,22 @@ export const RightGroup = styled.div`
   margin-right: 123px;
   margin-left: auto;
 
+  & div {
+    flex-direction: row;
+    width: 415px;
+    height: 34px;
+    @media screen and (max-width: 1190px) {
+      display: none;
+    }
+  }
+
+  & input {
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    margin-left:0;
+  }
+
   @media screen and (max-width: 768px) {
     margin-right: 20px;
     margin-left: auto;
@@ -61,8 +77,7 @@ export const RightGroupIcon = styled.img<IconProps>`
   }
 
   @media screen and (max-width: 320px) {
-    margin:0 0 0 13px;
-    ;
+    margin: 0 0 0 13px;
   }
 `;
 

@@ -28,7 +28,7 @@ export const ChefOfTheWeekImage = styled.div`
     margin: 0 auto 20px auto;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
   }
 `;
@@ -45,8 +45,10 @@ export const CollageWrapper = styled.div``;
 
 export const chefDescriptionStyles = {
   margin: "0 0 42px 0",
+  textAlign: "center",
 };
 
 export const collageDescriptionStyles = {
   margin: "0 0 23px 0",
+  textAlign: "center",
 };

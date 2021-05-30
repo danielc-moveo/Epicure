@@ -51,9 +51,3 @@ export const rightGroupIcons = [
     },
   },
 ];
-
-export const SearchBoxStyles = {
-  width: "415px",
-  height: "34px",
-};
-

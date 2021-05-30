@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../utils/CommonStyles";
+import { colors } from "../../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -18,4 +18,5 @@ export const IconsContainer = styled.div`
 
 export const descriptionStyles={
     margin:"41px 0 29px 0",
+    textAlign:"center",
 }

@@ -2,7 +2,7 @@ import { withRouter } from "react-router";
 import SearchBox from "../../utils/search-box/SearchBox";
 import logo from "./assets/NavLogo.png";
 import Hamburger from "./assets/Hamburger.svg";
-import { leftGroupLinks, rightGroupIcons, SearchBoxStyles } from "./helper";
+import { leftGroupLinks, rightGroupIcons } from "./helper";
 import {
   LeftGroup,
   Nav,
@@ -30,7 +30,9 @@ const Navbar = () => {
         ))}
       </LeftGroup>
       <RightGroup>
-        <SearchBox styles={SearchBoxStyles} isNavBar={true} />
+        <SearchBox
+          isNavbar={true}
+        />
         {rightGroupIcons.map(({ src, path, styles }, i) => (
           <RightGroupIcon
             isMainLogo={false}

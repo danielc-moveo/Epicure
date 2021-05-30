@@ -1,26 +1,22 @@
 import styled from "styled-components";
-import { InputProps } from "./interface";
+import { colors } from "../common/CommonStyles";
 
-export const InputContainer = styled.div<InputProps>`
+export const InputContainer = styled.div`
   display: flex;
   border-radius: 4px;
-  border: 1px solid black;
-  width: ${({ styles }) => styles.width};
-  height: ${({ styles }) => styles.height};
-  padding: 7px 13px 5px 16px;
-  @media screen and (max-width: 1190px) {
-    display: ${({ isNavBar }) => (isNavBar ? "none" : "block")};
-  }
+  border: 0.2px solid ${colors.black};
+  padding: 0 13px 0 16px;
 `;
-export const Input = styled.input<InputProps>`
+
+export const Input = styled.input`
+  background-color: ${colors.white_two};
   border: none;
-  width: 100%;
   &:focus {
     outline: none;
   }
 `;
 
-export const SearchIconSmallerScreen = styled.img`
+export const SearchIconOnCollapse = styled.img`
   width: 22px;
   height: 22px;
 
@@ -35,6 +31,12 @@ export const SearchIconSmallerScreen = styled.img`
 `;
 
 export const SearchIcon = styled.img`
+  margin: auto 0;
   width: 22px;
   height: 22px;
+
+  @media screen and (max-width: 425px) {
+    width: 16px;
+    height: 16px;
+  }
 `;

@@ -1,12 +1,12 @@
 import CardHome from "../../../utils/card/CardHome";
-import { Description } from "../../../utils/CommonStyles";
+import { Description } from "../../../utils/common/CommonStyles";
 import { CollageProps } from "./interface";
 import { CardsContainer, Wrapper } from "./Styles";
 
-const Collage = ({ title, styles }: CollageProps) => {
+const Collage = ({ title, descriptionStyles }: CollageProps) => {
   return (
     <Wrapper>
-      <Description styles={styles}>{title}</Description>
+      <Description {...descriptionStyles}>{title}</Description>
       <CardsContainer>
         <CardHome />
         <CardHome />

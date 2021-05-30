@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as Link_ } from "react-router-dom";
-import { colors } from "../../../utils/CommonStyles";
+import { colors } from "../../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
