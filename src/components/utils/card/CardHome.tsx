@@ -1,28 +1,5 @@
-import styled from "styled-components";
-import { IconHash } from "./assets/iconsHash";
-import { CardContent, CardProps } from "./Styles";
-
-export const Header = styled.span`
-  font-size: 30px;
-  letter-spacing: 1.77px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 23px;
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+import { iconHash } from "./assets/iconsHash";
+import { CardContent, CardProps, Header, Container, Wrapper } from "./Styles";
 
 const CardHome = ({
   header,
@@ -34,7 +11,7 @@ const CardHome = ({
 }: CardProps) => {
   return (
     <Wrapper>
-      {header && <Header> {header}</Header>}
+      {header && <Header className="header"> {header}</Header>}
       <CardContent>
         <img className="main-image" src={imgSrc} alt="" />
         <Container>
@@ -42,7 +19,7 @@ const CardHome = ({
           <span className="text">{text}</span>
           <div className="icons-container">
             {alerts?.map((alert, i) => (
-              <img className="icon" src={IconHash[`${alert}`]} alt="" key={i} />
+              <img className="icon" src={iconHash[`${alert}`]} alt="" key={i} />
             ))}
           </div>
           {price && (
@@ -59,6 +36,3 @@ const CardHome = ({
 };
 
 export default CardHome;
-//enum
-//classnames
-//remove

@@ -1,15 +1,8 @@
-import styled from "styled-components";
 import { POPULAR_RESTAURANTS, SIGNATURE_DISH } from "../../../utils/constants";
-import { collageDescriptionStyles } from "../chef-of-the-week/Styles";
 import Collage from "../collage/Collage";
 import { TopRestaurantsProps } from "./interface";
+import { CollagesWrapper } from "./Styles";
 
-export const CollagesWrapper = styled.div`
-  margin: 140px 169px 0 169px;
-  @media screen and (max-width: 425px) {
-    margin: 51px 0 95px 0;
-  }
-`;
 const TopRestaurants = ({
   popularRestaurants,
   signatureDishes,
@@ -18,13 +11,11 @@ const TopRestaurants = ({
     <CollagesWrapper>
       <Collage
         isPopularRestaurant={true}
-        descriptionStyles={collageDescriptionStyles}
         title={POPULAR_RESTAURANTS}
         cardsData={popularRestaurants}
       />
       <Collage
         isPopularRestaurant={false}
-        descriptionStyles={collageDescriptionStyles}
         title={SIGNATURE_DISH}
         cardsData={signatureDishes}
       />

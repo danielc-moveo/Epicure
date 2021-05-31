@@ -20,6 +20,7 @@ export const LeftGroup = styled.div`
     width: 33px;
     height: 33px;
   }
+
   @media screen and (max-width: 768px) {
     margin-left: 20px;
     width: 50%;
@@ -44,8 +45,6 @@ export const RightGroup = styled.div`
   & input {
     font-size: 18px;
     width: 100%;
-    height: auto;
-    margin-left:0;
   }
 
   @media screen and (max-width: 768px) {

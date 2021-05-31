@@ -14,9 +14,7 @@ import {
 } from "./Styles";
 
 const Navbar = () => {
-  const handleRedirect = (path: string) => {
-    console.log(path);
-  };
+  const handleRedirect = (path: string) => {};
 
   return (
     <Nav>
@@ -30,9 +28,7 @@ const Navbar = () => {
         ))}
       </LeftGroup>
       <RightGroup>
-        <SearchBox
-          isNavbar={true}
-        />
+        <SearchBox isNavbar={true} />
         {rightGroupIcons.map(({ src, path, styles }, i) => (
           <RightGroupIcon
             isMainLogo={false}

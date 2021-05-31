@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import { Description } from "../../../utils/common/CommonStyles";
-import { IconsContainer, Wrapper, descriptionStyles } from "./Styles";
+import { IconsContainer, Wrapper } from "./Styles";
 
 export const IconAndText = styled.div``;
 const IconsMeaning = () => {
   return (
     <Wrapper>
-      <Description {...descriptionStyles}>
-        THE MEANING OF OUR ICONS
-      </Description>
+      <Description>THE MEANING OF OUR ICONS</Description>
       <IconsContainer>
         <IconAndText>
           <div style={{ marginBottom: "16px", textAlign: "center" }}>Icon</div>

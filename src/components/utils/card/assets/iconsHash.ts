@@ -1,7 +1,7 @@
-import SpicyIcon from "./spicy.svg";
-import VegiIcon from "./vegi.svg";
+import spicyIcon from "./spicy.svg";
+import vegiIcon from "./vegi.svg";
 
-export const IconHash: { [key: string]: string } = {
-  vegi: VegiIcon,
-  spicy: SpicyIcon,
+export const iconHash: { [key: string]: string } = {
+  vegi: spicyIcon,
+  spicy: vegiIcon,
 };

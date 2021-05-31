@@ -1,19 +1,24 @@
 import { CardProps } from "../../../utils/card/Styles";
-import ClaroImage from "./assets/claro.png";
+import claroDishImage from "./assets/claro.png";
+import luminaDishImage from "./assets/lumina.png";
+import tigerLiliDishImage from "./assets/tiger-lili.png";
+import padKiMaoImage from "./assets/padkimao.png";
+import garbanzoImage from "./assets/garbanzo.png";
+import smokedPizza from "./assets/smoked-pizza.png";
 
 export const popularRestaurants: CardProps[] = [
   {
-    imgSrc: ClaroImage,
+    imgSrc: claroDishImage,
     textBold: "Claro",
     text: "Ran Shmuel",
   },
   {
-    imgSrc: ClaroImage,
+    imgSrc: luminaDishImage,
     textBold: "Lumina",
     text: "Meir Adoni",
   },
   {
-    imgSrc: ClaroImage,
+    imgSrc: tigerLiliDishImage,
     textBold: "Tiger Lilly",
     text: "Yarin Green",
   },
@@ -21,7 +26,7 @@ export const popularRestaurants: CardProps[] = [
 
 export const signatureDishes: CardProps[] = [
   {
-    imgSrc: ClaroImage,
+    imgSrc: padKiMaoImage,
     header: "Tiger Lilly",
     textBold: "Pad Ki Mao",
     text: `Shrimps, Glass Noodles, Kemiri Nuts, 
@@ -30,7 +35,7 @@ export const signatureDishes: CardProps[] = [
     alerts: ["spicy", "vegi"],
   },
   {
-    imgSrc: ClaroImage,
+    imgSrc: garbanzoImage,
     header: "Kab Mem",
     textBold: "Garbanzo Frito",
     text: `Polenta fingers, veal cheek,
@@ -40,7 +45,7 @@ export const signatureDishes: CardProps[] = [
     alerts: ["vegi"],
   },
   {
-    imgSrc: ClaroImage,
+    imgSrc: smokedPizza,
     header: "Popina",
     textBold: "Smoked Pizza",
     text: `Basil dough, cashew "butter", 

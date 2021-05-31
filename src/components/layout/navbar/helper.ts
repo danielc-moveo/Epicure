@@ -1,5 +1,5 @@
-import NotesIcon from "./assets/Notes.svg";
-import UserIcon from "./assets/User.svg";
+import notesIcon from "./assets/Notes.svg";
+import userIcon from "./assets/User.svg";
 
 export const leftGroupLinks = [
   {
@@ -33,7 +33,7 @@ export const leftGroupLinks = [
 
 export const rightGroupIcons = [
   {
-    src: UserIcon,
+    src: notesIcon,
     path: "/",
     styles: {
       width: "23px",
@@ -42,7 +42,7 @@ export const rightGroupIcons = [
     },
   },
   {
-    src: NotesIcon,
+    src: userIcon,
     path: "/",
     styles: {
       width: "22px",
