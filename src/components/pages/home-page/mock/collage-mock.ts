@@ -27,7 +27,7 @@ export const signatureDishes: CardProps[] = [
     text: `Shrimps, Glass Noodles, Kemiri Nuts, 
       Shallots,   Lemon Grass, Magic  Chili Brown Coconut`,
     price: 88,
-    alerts: ["spicy", "vegan"],
+    alerts: ["spicy", "vegi"],
   },
   {
     imgSrc: ClaroImage,
@@ -37,7 +37,7 @@ export const signatureDishes: CardProps[] = [
     magic chili cured lemon
     cream, yellow laksa`,
     price: 98,
-    alerts: ["vegan"],
+    alerts: ["vegi"],
   },
   {
     imgSrc: ClaroImage,

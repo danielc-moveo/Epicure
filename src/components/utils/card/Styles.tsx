@@ -11,11 +11,8 @@ export interface CardProps {
   alerts?: string[];
 }
 // temporary styles
-export const Card = styled.div<{ isPopularRestaurant: boolean }>`
+export const CardContent = styled.div`
   margin: 0 11px;
   background-color: ${colors.beige};
-`;
-
-export const TextBold = styled.span`
-  margin-top: 10px;
+  position: relative;
 `;

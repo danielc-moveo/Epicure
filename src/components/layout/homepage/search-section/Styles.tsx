@@ -8,7 +8,15 @@ export const Container = styled.div`
   align-items: center;
   background-image: url(${backGroundMock});
   background-size: cover;
-  height: 696px;
+  height: calc(100vh - 43px);
+
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 269px;
+  }
 `;
 
 export const Box = styled.div`
