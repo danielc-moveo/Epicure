@@ -7,7 +7,7 @@ import { Wrapper } from "./Styles";
 const Slider = ({ cardsData }: SliderProps) => {
   return (
     <Wrapper>
-      <Carousel>
+      <Carousel showThumbs={false}>
         {cardsData.map((data, i) => (
           <CardHome key={i} {...data} />
         ))}
