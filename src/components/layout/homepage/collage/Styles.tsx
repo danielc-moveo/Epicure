@@ -78,7 +78,7 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
     .border-center {
       width: 112px;
       height: 1px;
-      border-top: solid 0.5px ${colors.brownGrey};
+      border-top: solid 0.5px ${colors.primary_grey};
       align-self: center;
     }
   }

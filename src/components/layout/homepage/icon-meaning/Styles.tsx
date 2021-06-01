@@ -5,9 +5,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${colors.primary_grey};
+  background-color: ${colors.primary_grey_light};
   padding:20px 0;
-  background-color: ${colors.primary_grey};
+  background-color: ${colors.primary_grey_light};
 
   ${Description} {
     margin: 41px 0 29px 0;

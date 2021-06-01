@@ -35,7 +35,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${colors.primary_grey};
+  background-color: ${colors.primary_grey_light};
   opacity: 0.9;
   width: 781px;
   height: 222px;

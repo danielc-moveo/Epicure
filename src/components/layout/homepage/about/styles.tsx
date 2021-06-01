@@ -3,7 +3,7 @@ import { colors, Description } from "../../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
-  background-color: ${colors.primary_grey};
+  background-color: ${colors.primary_grey_light};
 `;
 
 export const Container = styled.div`

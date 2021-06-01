@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const colors = {
   primary_black: "black",
-  primary_yellow: "rgba(232,196,122,0.8)",//sand
-  primary_grey: "#fafafa", //white_two
-  brownGrey: "#979797",
-  palePeach: "#f7e0b2",
-  beige: "#f9f4ea",
+  primary_yellow: "rgba(232,196,122,0.8)",
+  primary_yellow_light: "#f9f4ea",
+  primary_yellow_dark: "#f7e0b2",
+  primary_grey_light: "#fafafa",
+  primary_grey: "#979797",
 };
-
 
 export const Description = styled.span`
   font-size: 30px;

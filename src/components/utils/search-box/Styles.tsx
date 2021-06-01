@@ -9,7 +9,7 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  background-color: ${colors.primary_grey};
+  background-color: ${colors.primary_grey_light};
   border: none;
   &:focus {
     outline: none;

@@ -16,7 +16,7 @@ export const CardContent = styled.div`
   position: relative;
 
   @media screen and (max-width: 768px) {
-    background-color: ${colors.palePeach};
+    background-color: ${colors.primary_yellow_dark};
   }ß
 `;
 
