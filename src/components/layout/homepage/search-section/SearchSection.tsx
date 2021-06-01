@@ -1,16 +1,16 @@
-import { Description } from "../../../utils/CommonStyles";
+import { Description } from "../../../utils/common/CommonStyles";
 import SearchBox from "../../../utils/search-box/SearchBox";
-import { Container, Box ,descriptionStyles} from "./Styles";
+import { Container, Box, descriptionStyles } from "./Styles";
 
 const SearchSection = () => {
   return (
     <Container>
       <Box>
-        <Description styles={descriptionStyles}>
+        <Description {...descriptionStyles}>
           Epicure works with the top
           <br /> chef restaurants in Tel Aviv
         </Description>
-        <SearchBox />
+        <SearchBox isNavbar={false} />
       </Box>
     </Container>
   );

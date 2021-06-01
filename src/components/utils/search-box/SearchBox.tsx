@@ -1,17 +1,22 @@
-import styled from "styled-components";
+import {
+  Input,
+  SearchIconOnCollapse,
+  InputContainer,
+  SearchIcon,
+} from "./Styles";
+import Icon from "./assets/Search.svg";
+import { SEARCH_PLACEHOLDER } from "../constants";
 
-const Input = styled.input`
-  border-radius: 4px;
-  height: 48px;
-  text-align: center;
-  padding: 0 20px;
-  width:50%;
-  @media screen and (max-width: 450px) {
-    width: 80%;
-  }
-`;
-const SearchBox = () => {
-  return <Input placeholder="Search for restaurant cuisine, chef" />;
+const SearchBox = ({ isNavbar }: { isNavbar: boolean }) => {
+  return (
+    <>
+      <InputContainer>
+        <Input placeholder={SEARCH_PLACEHOLDER} />
+        <SearchIcon src={Icon} alt="" />
+      </InputContainer>
+      {isNavbar && <SearchIconOnCollapse src={Icon} alt="" />}
+    </>
+  );
 };
 
 export default SearchBox;

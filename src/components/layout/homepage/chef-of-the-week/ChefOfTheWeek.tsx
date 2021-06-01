@@ -1,4 +1,4 @@
-import { Description } from "../../../utils/CommonStyles";
+import { Description } from "../../../utils/common/CommonStyles";
 import Collage from "../collage/Collage";
 import {
   Wrapper,
@@ -12,7 +12,7 @@ import {
 const ChefOfTheWeek = () => {
   return (
     <Wrapper>
-      <Description styles={chefDescriptionStyles}>Chef of the week</Description>
+      <Description {...chefDescriptionStyles}>Chef of the week</Description>
       <Container>
         <ChefOfTheWeekImage>Yossi Shitrit</ChefOfTheWeekImage>
         <ChefDescription>
@@ -22,7 +22,7 @@ const ChefOfTheWeek = () => {
           optio at.
         </ChefDescription>
       </Container>
-      <Collage styles={collageDescriptionStyles} title={"Yossis restaurants"}></Collage>
+      <Collage descriptionStyles={collageDescriptionStyles} title={"Yossis restaurants"}></Collage>
     </Wrapper>
   );
 };

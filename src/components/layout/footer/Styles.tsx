@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { colors } from "../../utils/CommonStyles";
+import { colors } from "../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,12 +12,7 @@ export const Wrapper = styled.div`
 export const FooterLink = styled(Link)`
   margin: 0 45px;
   text-decoration: none;
-  color: ${colors.black};
-  //   font-family: HelveticaNeue;
-  font-size: 18px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.13px;
+  color: ${colors.primary_black};
+  font-size: 1.125rem;
+  letter-spacing: 0.070625rem;
 `;

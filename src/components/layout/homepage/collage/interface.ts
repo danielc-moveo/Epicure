@@ -1,6 +1,7 @@
 export interface CollageProps {
   title: string;
-  styles: {
+  descriptionStyles: {
     margin: string;
+    textAlign: string;
   };
 }
