@@ -49,8 +49,6 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 968px) {
-    align-items: center;
-
     ${Description} {
       margin: 0 0 16px 0;
       font-size: 0.875rem;
@@ -64,28 +62,28 @@ export const Wrapper = styled.div`
         letter-spacing: 0.080625rem;
       }
     }
+  }
 
-    @media screen and (min-width: 900px) {
-      ${CollageWrapper} {
-        align-items: start;
-      }
-
-      ${CardsContainer} {
-        display: flex;
-      }
-
-      ${SliderWrapper} {
-        display: none;
-      }
+  @media screen and (min-width: 0px) {
+    ${CardsContainer} {
+      display: flex;
     }
 
-    @media screen and (max-width: 899px) {
-      ${CollageWrapper} {
-        ${Description} {
-          margin: 20px auto 19px auto;
-          font-size: 0.875rem;
-          letter-spacing: 0.055rem;
-        }
+    ${SliderWrapper} {
+      display: none;
+    }
+
+    ${CollageWrapper} {
+      align-items: start;
+    }
+  }
+
+  @media screen and (max-width: 899px) {
+    ${CollageWrapper} {
+      ${Description} {
+        margin: 20px auto 19px 0;
+        font-size: 0.875rem;
+        letter-spacing: 0.055rem;
       }
     }
   }
@@ -95,7 +93,6 @@ export const Container = styled.div`
   display: flex;
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    align-items: center;
   }
 `;
 
