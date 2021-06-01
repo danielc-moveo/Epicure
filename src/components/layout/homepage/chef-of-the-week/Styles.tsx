@@ -23,7 +23,6 @@ export const ChefOfTheWeekImage = styled.div`
   margin: 0 20px 59px 20px;
   text-align: center;
   min-width: 433px;
-  border: 1px solid black;
   @media screen and (max-width: 900px) {
     margin: 0 auto 20px auto;
   }

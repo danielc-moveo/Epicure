@@ -3,7 +3,7 @@ import { colors } from "../../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
-  background-color: ${colors.white_two};
+  background-color: ${colors.primary_grey};
 `;
 
 export const Container = styled.div`
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const AboutText = styled.div`
   max-width: 567px;
-  margin-bottom:31.7px;
+  margin-bottom: 31.7px;
 `;
 
 export const Logo = styled.div`

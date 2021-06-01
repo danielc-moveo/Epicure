@@ -6,8 +6,8 @@ export const leftGroupLinks = [
     title: "EPICURE",
     styles: {
       margin: "0 31px 0 15px",
-      fontSize: "27px",
-      letterSpacing: "1.35px",
+      fontSize: "1.6875rem",
+      letterSpacing: "0.084375rem",
     },
     path: "/",
   },
@@ -15,8 +15,8 @@ export const leftGroupLinks = [
     title: "Restaurants",
     styles: {
       margin: "0 28px 0 0",
-      fontSize: "18px",
-      letterSpacing: "1.92px",
+      fontSize: "1.125rem",
+      letterSpacing: "0.12rem",
     },
     path: "/",
   },
@@ -24,8 +24,8 @@ export const leftGroupLinks = [
     title: "Chefs",
     styles: {
       margin: "0",
-      fontSize: "18px",
-      letterSpacing: "1.92px",
+      fontSize: "1.125rem",
+      letterSpacing: "0.12rem",
     },
     path: "/",
   },

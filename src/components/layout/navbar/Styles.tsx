@@ -42,7 +42,7 @@ export const RightGroup = styled.div`
   }
 
   & input {
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
     height: auto;
     margin-left:0;
@@ -57,7 +57,7 @@ export const RightGroup = styled.div`
 export const NavLink = styled(Link)<NavLinkProps>`
   margin: ${({ styles }) => styles.margin};
   text-decoration: none;
-  color: ${colors.black};
+  color: ${colors.primary_black};
   font-size: ${({ styles }) => styles.fontSize};
   letter-spacing: ${({ styles }) => styles.letterSpacing};
 

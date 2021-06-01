@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const FooterLink = styled(Link)`
   margin: 0 45px;
   text-decoration: none;
-  color: ${colors.black};
-  font-size: 18px;
-  letter-spacing: 1.13px;
+  color: ${colors.primary_black};
+  font-size: 1.125rem;
+  letter-spacing: 0.070625rem;
 `;

@@ -15,7 +15,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${colors.white_two};
+  background-color: ${colors.primary_grey};
   opacity: 0.9;
   width: 781px;
   height: 222px;
@@ -32,7 +32,7 @@ export const Box = styled.div`
   }
 
   & input {
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 100%;
     margin-left: 20px;
     @media screen and (max-width: 425px) {
@@ -49,12 +49,12 @@ export const Box = styled.div`
     height: 125px;
 
     & span {
-      font-size: 16px;
+      font-size: 1rem;
       margin: 18px 0 13px 0;
     }
 
     & input {
-      font-size: 13px;
+      font-size: 0.8125rem;
     }
   }
 

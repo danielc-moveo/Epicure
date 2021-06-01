@@ -20,11 +20,9 @@ export const LinksContainer = styled.div`
 export const Link = styled(Link_)`
   margin: 0 5px;
   text-decoration: none;
-  color: ${colors.black};
+  color: ${colors.primary_black};
   padding: 10px;
-  background-color: ${colors.sand};
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 0.93px;
+  background-color: ${colors.primary_yellow};
+  font-size: 0.8125rem;
+  letter-spacing: 0.058125rem;
 `;
-

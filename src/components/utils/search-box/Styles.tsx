@@ -4,12 +4,12 @@ import { colors } from "../common/CommonStyles";
 export const InputContainer = styled.div`
   display: flex;
   border-radius: 4px;
-  border: 0.2px solid ${colors.black};
+  border: 0.2px solid ${colors.primary_black};
   padding: 0 13px 0 16px;
 `;
 
 export const Input = styled.input`
-  background-color: ${colors.white_two};
+  background-color: ${colors.primary_grey};
   border: none;
   &:focus {
     outline: none;

@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${colors.white_two};
+  background-color: ${colors.primary_grey};
   opacity:0.9;
   padding:20px 0;
 `;
