@@ -98,6 +98,7 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
 
     ${Description} {
       font-size: 14px;
+      margin-bottom: 13px;
     }
 
     .header {

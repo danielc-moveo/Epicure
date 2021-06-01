@@ -1,21 +1,33 @@
 import styled from "styled-components";
 import { colors, Description } from "../../../utils/common/CommonStyles";
-import backGroundMock from "./assets/hero-picture@2x.png";
+import backGroundMock from "./assets/hero-picture.png";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(${backGroundMock});
-  background-size: cover;
-  height: calc(100vh - 53px);
+  height: 696px;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 1024px) {
+    height: 500px;
+  }
 
   @media screen and (max-width: 768px) {
     height: 400px;
   }
 
+  @media screen and (max-width: 605px) {
+    height: 300px;
+  }
+
   @media screen and (max-width: 425px) {
     height: 269px;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 200px;
   }
 `;
 

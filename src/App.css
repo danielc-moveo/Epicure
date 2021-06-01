@@ -1,11 +1,13 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: HelveticaNeue;
 }
 
-html,body,#root{
+html,
+body,
+#root {
   height: 100%;
   overflow: overlay;
 }
