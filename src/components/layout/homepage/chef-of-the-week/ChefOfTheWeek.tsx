@@ -11,9 +11,11 @@ import {
 const ChefOfTheWeek = ({ cardsData }: { cardsData: CardProps[] }) => {
   return (
     <Wrapper>
-      <Description>Chef of the week</Description>
+      <Description>CHEF OF THE WEEK :</Description>
       <Container>
-        <ChefOfTheWeekImage>Yossi Shitrit</ChefOfTheWeekImage>
+        <ChefOfTheWeekImage>
+          <div>Yossi Shitrit</div>
+        </ChefOfTheWeekImage>
         <ChefDescription>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, error
           quia. Velit, consequatur autem placeat sequi ullam porro facilis quas

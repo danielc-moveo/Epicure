@@ -17,7 +17,7 @@ export const CardContent = styled.div`
 
   @media screen and (max-width: 768px) {
     background-color: ${colors.primary_yellow_dark};
-  }ß
+  }
 `;
 
 export const Header = styled.span`

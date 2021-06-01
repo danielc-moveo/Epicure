@@ -147,7 +147,7 @@ export const LinkContainer = styled.div`
 export const Link = styled(Link_)`
   font-weight: bold;
   font-size: 1.875rem;
-  letter-spacing: ß;
+  letter-spacing: 0.125rem;
   color: ${colors.primary_black};
   text-decoration: none;
 `;

@@ -10,12 +10,12 @@ export const colors = {
 };
 
 export const Description = styled.span`
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 1.33;
-  letter-spacing: 1.25px;
+  letter-spacing: 0.078125rem;
   color: ${colors.primary_black};
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 `;
 

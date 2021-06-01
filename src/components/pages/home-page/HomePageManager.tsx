@@ -8,7 +8,7 @@ import {
   popularRestaurants,
   signatureDishes,
   chefOfTheWeekRestaurants,
-} from "./mock/collage-mock";
+} from "../../../utils/mock/mock-data";
 import TopRestaurants from "../../layout/homepage/top-restaurants/TopRestaurants";
 
 const HomePageManager = () => {

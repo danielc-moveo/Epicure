@@ -1,10 +1,13 @@
-import { CardProps } from "../../../layout/utils/card/Styles";
+import { CardProps } from "../../components/layout/utils/card/Styles";
 import claroDishImage from "./assets/claro.png";
 import luminaDishImage from "./assets/lumina.png";
 import tigerLiliDishImage from "./assets/tiger-lili.png";
 import padKiMaoImage from "./assets/padkimao.png";
 import garbanzoImage from "./assets/garbanzo.png";
 import smokedPizza from "./assets/smoked-pizza.png";
+import onzaDishImage from "./assets/claro.png";
+import mashyaDishImage from "./assets/mashya.png";
+import kitchenMarketDishImage from "./assets/kitchen-market.png";
 
 export const popularRestaurants: CardProps[] = [
   {
@@ -56,7 +59,15 @@ export const signatureDishes: CardProps[] = [
 
 export const chefOfTheWeekRestaurants: CardProps[] = [
   {
-    imgSrc: "",
-    textBold: "",
+    imgSrc: onzaDishImage,
+    textBold: "Onza",
+  },
+  {
+    imgSrc: kitchenMarketDishImage,
+    textBold: "Kitchen Market",
+  },
+  {
+    imgSrc: mashyaDishImage,
+    textBold: "Mashya",
   },
 ];
