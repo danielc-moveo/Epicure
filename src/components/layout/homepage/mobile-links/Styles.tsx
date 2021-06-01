@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link as Link_ } from "react-router-dom";
-import { colors } from "../../../utils/common/CommonStyles";
+import { colors } from "../../utils/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 125px;
-  background-color: ${colors.white_two};
+  background-color: ${colors.primary_grey_light};
 
   @media screen and (min-width: 769px) {
     display: none;

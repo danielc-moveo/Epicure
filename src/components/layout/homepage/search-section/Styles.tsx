@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, Description } from "../../../utils/common/CommonStyles";
+import { colors, Description } from "../../utils/CommonStyles";
 import backGroundMock from "./assets/hero-picture.png";
 
 export const Container = styled.div`

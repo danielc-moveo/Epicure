@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../common/CommonStyles";
+import { colors } from "../CommonStyles";
 
 export interface CardProps {
   imgSrc: string;
@@ -12,7 +12,7 @@ export interface CardProps {
 }
 
 export const CardContent = styled.div`
-  background-color: ${colors.beige};
+  background-color: ${colors.primary_yellow_light};
   position: relative;
 
   @media screen and (max-width: 768px) {

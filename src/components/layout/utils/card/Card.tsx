@@ -1,7 +1,7 @@
-import { iconHash } from "./assets/iconsHash";
+import { iconHash } from "../assets/iconsHash";
 import { CardContent, CardProps, Header, Container, Wrapper } from "./Styles";
 
-const CardHome = ({
+const Card = ({
   header,
   imgSrc,
   textBold,
@@ -35,4 +35,4 @@ const CardHome = ({
   );
 };
 
-export default CardHome;
+export default Card;

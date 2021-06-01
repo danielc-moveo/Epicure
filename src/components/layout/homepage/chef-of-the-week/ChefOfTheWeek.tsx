@@ -1,5 +1,5 @@
-import { CardProps } from "../../../utils/card/Styles";
-import { Description } from "../../../utils/common/CommonStyles";
+import { CardProps } from "../../utils/card/Styles";
+import { Description } from "../../utils/CommonStyles";
 import Collage from "../collage/Collage";
 import {
   Wrapper,

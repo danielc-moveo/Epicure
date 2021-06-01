@@ -1,23 +1,23 @@
-import styled from "styled-components";
-import { Description } from "../../../utils/common/CommonStyles";
-import { IconsContainer, Wrapper } from "./Styles";
+import { MEANING } from "../../../../utils/constants";
+import { iconHash } from "../../utils/assets/iconsHash";
+import { Description, Icon } from "../../utils/CommonStyles";
+import { IconsContainer, Wrapper, IconAndText } from "./Styles";
 
-export const IconAndText = styled.div``;
 const IconsMeaning = () => {
   return (
     <Wrapper>
-      <Description>THE MEANING OF OUR ICONS</Description>
+      <Description>{MEANING}</Description>
       <IconsContainer>
-        <IconAndText>
-          <div style={{ marginBottom: "16px", textAlign: "center" }}>Icon</div>
+        <IconAndText className="spicy">
+          <Icon src={iconHash["vegan"]} />
           <span>Spicy</span>
         </IconAndText>
-        <IconAndText>
-          <div style={{ marginBottom: "16px", textAlign: "center" }}>Icon</div>
+        <IconAndText className="vegi">
+          <Icon src={iconHash["vegi"]} />
           <span>Vegetitarian</span>
         </IconAndText>
-        <IconAndText>
-          <div style={{ marginBottom: "16px", textAlign: "center" }}>Icon</div>
+        <IconAndText className="vegan">
+          <Icon src={iconHash["vegan"]} />
           <span>Vegan</span>
         </IconAndText>
       </IconsContainer>

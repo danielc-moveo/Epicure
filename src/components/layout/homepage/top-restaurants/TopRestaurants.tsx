@@ -1,4 +1,4 @@
-import { POPULAR_RESTAURANTS, SIGNATURE_DISH } from "../../../utils/constants";
+import { POPULAR_RESTAURANTS, SIGNATURE_DISH } from "../../../../utils/constants";
 import Collage from "../collage/Collage";
 import { TopRestaurantsProps } from "./interface";
 import { CollagesWrapper } from "./Styles";

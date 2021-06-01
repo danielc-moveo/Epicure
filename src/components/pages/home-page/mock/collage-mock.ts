@@ -1,4 +1,4 @@
-import { CardProps } from "../../../utils/card/Styles";
+import { CardProps } from "../../../layout/utils/card/Styles";
 import claroDishImage from "./assets/claro.png";
 import luminaDishImage from "./assets/lumina.png";
 import tigerLiliDishImage from "./assets/tiger-lili.png";

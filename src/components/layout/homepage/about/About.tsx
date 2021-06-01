@@ -1,4 +1,4 @@
-import { Description } from "../../../utils/common/CommonStyles";
+import { Description } from "../../utils/CommonStyles";
 import {
   Container,
   Wrapper,

@@ -1,5 +1,5 @@
-import { Description } from "../../../utils/common/CommonStyles";
-import SearchBox from "../../../utils/search-box/SearchBox";
+import { Description } from "../../utils/CommonStyles";
+import SearchBox from "../../utils/search-box/SearchBox";
 import { Container, Box } from "./Styles";
 
 const SearchSection = () => {

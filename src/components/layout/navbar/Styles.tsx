@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { colors } from "../../utils/common/CommonStyles";
+import { colors } from "../utils/CommonStyles";
 import { NavLinkProps, IconProps } from "./interface";
 import styled from "styled-components";
 

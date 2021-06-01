@@ -5,7 +5,7 @@ import {
   SearchIcon,
 } from "./Styles";
 import Icon from "./assets/Search.svg";
-import { SEARCH_PLACEHOLDER } from "../constants";
+import { SEARCH_PLACEHOLDER } from "../../../../utils/constants";
 
 const SearchBox = ({ isNavbar }: { isNavbar: boolean }) => {
   return (

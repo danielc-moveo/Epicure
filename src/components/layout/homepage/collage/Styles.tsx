@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { CardContent } from "../../../utils/card/Styles";
-import { colors, Description } from "../../../utils/common/CommonStyles";
+import { CardContent } from "../../utils/card/Styles";
+import { colors, Description } from "../../utils/CommonStyles";
 import { Link as Link_ } from "react-router-dom";
 
 export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
@@ -10,12 +10,12 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
   margin-bottom: 87px;
 
   .header {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 23px;
   }
   ${Description} {
-    font-size: 30px;
-    letter-spacing: 1.25px;
+    font-size: 1.875rem;
+    letter-spacing: 0.078125rem;
     text-align: center;
     margin-bottom: 42px;
   }
@@ -71,7 +71,7 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
     }
 
     .price {
-      font-size: 24.9px;
+      font-size: 1.55625rem;
       margin: 0 10px;
     }
 
@@ -97,22 +97,22 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
     margin-bottom: 100px;
 
     ${Description} {
-      font-size: 14px;
+      font-size: 0.875rem;
       margin-bottom: 13px;
     }
 
     .header {
-      font-size: 16px;
-      letter-spacing: 0.94px;
+      font-size: 1rem;
+      letter-spacing: 0.05875rem;
       margin-bottom: 15px;
     }
     ${CardContent} {
       .text-bold {
         font-size: ${({ isPopularRestaurant }) =>
-          isPopularRestaurant ? "25px" : "27.6px"};
+          isPopularRestaurant ? "1.5625rem" : "1.725rem"};
 
         letter-spacing: ${({ isPopularRestaurant }) =>
-          isPopularRestaurant ? "1.67px" : "1.84px"};
+          isPopularRestaurant ? "0.104375rem" : "0.115rem"};
       }
     }
   }
@@ -146,8 +146,8 @@ export const LinkContainer = styled.div`
 
 export const Link = styled(Link_)`
   font-weight: bold;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: ${colors.black};
+  font-size: 1.875rem;
+  letter-spacing: ß;
+  color: ${colors.primary_black};
   text-decoration: none;
 `;

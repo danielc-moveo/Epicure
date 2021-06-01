@@ -1,4 +1,4 @@
-import CardHome from "../../../../utils/card/CardHome";
+import CardHome from "../../../utils/card/Card";
 import { SliderProps } from "./interface";
 import { Wrapper } from "./Styles";
 import { Carousel } from "react-responsive-carousel";

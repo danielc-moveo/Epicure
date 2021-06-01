@@ -1,5 +1,5 @@
-import CardHome from "../../../utils/card/CardHome";
-import { Description } from "../../../utils/common/CommonStyles";
+import Card from "../../utils/card/Card";
+import { Description } from "../../utils/CommonStyles";
 import { CollageProps } from "./interface";
 import Slider from "./slider/Slider";
 import { CardsContainer, Wrapper, Link, LinkContainer } from "./Styles";
@@ -12,7 +12,7 @@ const Collage = ({ title, cardsData, isPopularRestaurant }: CollageProps) => {
         <div>
           <CardsContainer>
             {cardsData.map((data, i) => (
-              <CardHome {...data} key={i} />
+              <Card {...data} key={i} />
             ))}
           </CardsContainer>
           {isPopularRestaurant && (

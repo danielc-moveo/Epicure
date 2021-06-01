@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../common/CommonStyles";
+import { colors } from "../CommonStyles";
 
 export const InputContainer = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import { withRouter } from "react-router";
-import SearchBox from "../../utils/search-box/SearchBox";
+import SearchBox from "../utils/search-box/SearchBox";
 import logo from "./assets/NavLogo.png";
 import Hamburger from "./assets/Hamburger.svg";
 import { leftGroupLinks, rightGroupIcons } from "./helper";

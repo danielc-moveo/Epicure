@@ -1,4 +1,4 @@
-import { CardProps } from "../../../../utils/card/Styles";
+import { CardProps } from "../../../utils/card/Styles";
 
 export interface SliderProps {
   cardsData: CardProps[];
