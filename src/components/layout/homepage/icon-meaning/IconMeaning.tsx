@@ -9,12 +9,12 @@ const IconsMeaning = () => {
       <Description>{MEANING}</Description>
       <IconsContainer>
         <IconAndText className="spicy">
-          <Icon src={iconHash["vegan"]} />
+          <Icon src={iconHash["spicy"]} />
           <span>Spicy</span>
         </IconAndText>
         <IconAndText className="vegi">
           <Icon src={iconHash["vegi"]} />
-          <span>Vegetitarian</span>
+          <span>Vegitarian</span>
         </IconAndText>
         <IconAndText className="vegan">
           <Icon src={iconHash["vegan"]} />
