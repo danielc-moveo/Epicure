@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 36px;
+  @media screen and (min-width: 969px) {
+    display: none;
+  }
 `;

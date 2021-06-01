@@ -1,14 +1,34 @@
 import styled from "styled-components";
-import { colors } from "../../../utils/common/CommonStyles";
-import backGroundMock from "./assets/hero-picture@2x.png";
+import { colors, Description } from "../../../utils/common/CommonStyles";
+import backGroundMock from "./assets/hero-picture.png";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(${backGroundMock});
-  background-size: cover;
   height: 696px;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 1024px) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 605px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 269px;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 200px;
+  }
 `;
 
 export const Box = styled.div`
@@ -20,50 +40,48 @@ export const Box = styled.div`
   width: 781px;
   height: 222px;
 
+  ${Description} {
+    margin: 41px 0 18px 0;
+  }
+
   & div {
     width: 511px;
     height: 48px;
     flex-direction: row-reverse;
-    @media screen and (max-width: 425px) {
-      width: 269px;
-      height: 33px;
-      padding: 0 19px 0 9px;
-    }
   }
 
   & input {
     font-size: 1.375rem;
     width: 100%;
     margin-left: 20px;
-    @media screen and (max-width: 425px) {
-      margin-left: 8px;
-    }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     width: 650px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     width: 335px;
     height: 125px;
 
-    & span {
+    ${Description} {
       font-size: 1rem;
       margin: 18px 0 13px 0;
     }
 
+    & div {
+      width: 269px;
+      height: 33px;
+      padding: 0 19px 0 9px;
+    }
+
     & input {
       font-size: 0.8125rem;
+      margin-left: 8px;
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 340px) {
     width: 300px;
   }
 `;
-
-export const descriptionStyles = {
-  margin: "41px 0 18px 0",
-  textAlign: "center",
-};

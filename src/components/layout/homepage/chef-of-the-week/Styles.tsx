@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Description } from "../../../utils/common/CommonStyles";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,6 +8,10 @@ export const Wrapper = styled.div`
   background-color: white;
   @media screen and (max-width: 900px) {
     margin: 71px 20px 97px 20px;
+  }
+
+  ${Description} {
+    margin-bottom: 42px;
   }
 `;
 
@@ -41,13 +46,3 @@ export const ChefDescription = styled.div`
 `;
 
 export const CollageWrapper = styled.div``;
-
-export const chefDescriptionStyles = {
-  margin: "0 0 42px 0",
-  textAlign: "center",
-};
-
-export const collageDescriptionStyles = {
-  margin: "0 0 23px 0",
-  textAlign: "center",
-};

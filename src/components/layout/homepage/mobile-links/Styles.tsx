@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 125px;
+  background-color: ${colors.white_two};
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 `;

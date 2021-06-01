@@ -4,14 +4,13 @@ import {
   Wrapper,
   AboutText,
   Logo,
-  descriptionStyles,
 } from "./Styles";
 
 const About = () => {
   return (
     <Wrapper>
       <Container>
-        <Description {...descriptionStyles}> About us</Description>
+        <Description> About us</Description>
         <AboutText>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, saepe.
           Doloribus quo, hic libero ab laudantium voluptas nisi laborum incidunt

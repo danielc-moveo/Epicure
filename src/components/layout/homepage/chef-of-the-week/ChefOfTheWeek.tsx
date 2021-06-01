@@ -1,3 +1,4 @@
+import { CardProps } from "../../../utils/card/Styles";
 import { Description } from "../../../utils/common/CommonStyles";
 import Collage from "../collage/Collage";
 import {
@@ -5,14 +6,12 @@ import {
   Container,
   ChefOfTheWeekImage,
   ChefDescription,
-  chefDescriptionStyles,
-  collageDescriptionStyles
 } from "./Styles";
 
-const ChefOfTheWeek = () => {
+const ChefOfTheWeek = ({ cardsData }: { cardsData: CardProps[] }) => {
   return (
     <Wrapper>
-      <Description {...chefDescriptionStyles}>Chef of the week</Description>
+      <Description>Chef of the week</Description>
       <Container>
         <ChefOfTheWeekImage>Yossi Shitrit</ChefOfTheWeekImage>
         <ChefDescription>
@@ -22,7 +21,11 @@ const ChefOfTheWeek = () => {
           optio at.
         </ChefDescription>
       </Container>
-      <Collage descriptionStyles={collageDescriptionStyles} title={"Yossis restaurants"}></Collage>
+      <Collage
+        isPopularRestaurant={false}
+        cardsData={cardsData}
+        title={"Yossis restaurants"}
+      ></Collage>
     </Wrapper>
   );
 };

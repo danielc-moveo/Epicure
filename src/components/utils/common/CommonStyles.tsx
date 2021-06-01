@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import { DescriptionStyle } from "./interface";
 
 export const colors = {
   primary_black: "black",
-  primary_yellow: "rgba(232,196,122,0.8)",
-  primary_grey: "#fafafa",
+  primary_yellow: "rgba(232,196,122,0.8)",//sand
+  primary_grey: "#fafafa", //white_two
+  brownGrey: "#979797",
+  palePeach: "#f7e0b2",
+  beige: "#f9f4ea",
 };
 
-export const Description = styled.span<DescriptionStyle>`
-  font-size: 1.875rem;
-  line-height: 1.33;
-  letter-spacing: 0.078125rem;
-  color: ${colors.primary_black};
-  margin: ${({ margin }) => margin};
-  text-align: ${({ textAlign }) => textAlign};
 
-  @media screen and (max-width: 425px) {
-    font-size: 0.875rem;
+export const Description = styled.span`
+  font-size: 30px;
+  line-height: 1.33;
+  letter-spacing: 1.25px;
+  color: ${colors.primary_black};
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
   }
 `;
