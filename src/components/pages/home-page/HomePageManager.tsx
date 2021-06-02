@@ -1,7 +1,7 @@
 import MobileLinks from "../../layout/homepage/mobile-links/MobileLinks";
 import SearchSection from "../../layout/homepage/search-section/SearchSection";
 import IconsMeaning from "../../layout/homepage/icon-meaning/IconMeaning";
-import { Wrapper } from "./Styles";
+import { Wrapper, BottomSection } from "./Styles";
 import ChefOfTheWeek from "../../layout/homepage/chef-of-the-week/ChefOfTheWeek";
 import About from "../../layout/homepage/about/About";
 import {
@@ -21,8 +21,10 @@ const HomePageManager = () => {
         signatureDishes={signatureDishes}
       />
       <IconsMeaning />
-      <ChefOfTheWeek cardsData={chefOfTheWeekRestaurants} />
-      <About />
+      <BottomSection>
+        <ChefOfTheWeek cardsData={chefOfTheWeekRestaurants} />
+        <About />
+      </BottomSection>
     </Wrapper>
   );
 };

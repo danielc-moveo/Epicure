@@ -3,5 +3,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 36px;
+`;
+
+export const BottomSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

@@ -1,6 +1,5 @@
 import { withRouter } from "react-router";
 import SearchBox from "../utils/search-box/SearchBox";
-import logo from "./assets/NavLogo.png";
 import Hamburger from "./assets/Hamburger.svg";
 import { leftGroupLinks, rightGroupIcons } from "./helper";
 import {
@@ -9,9 +8,10 @@ import {
   NavLink,
   RightGroup,
   RightGroupIcon,
-  Logo,
   HamburgerIcon,
 } from "./Styles";
+import { iconHash } from "../utils/assets/iconsHash";
+import { Icon } from "../utils/CommonStyles";
 
 const Navbar = () => {
   const handleRedirect = (path: string) => {};
@@ -20,7 +20,12 @@ const Navbar = () => {
     <Nav>
       <LeftGroup>
         <HamburgerIcon src={Hamburger} />
-        <Logo src={logo} onClick={() => handleRedirect("/")} alt="" />
+        <Icon
+          className="logo"
+          src={iconHash["logo"]}
+          onClick={() => handleRedirect("/")}
+          alt=""
+        />
         {leftGroupLinks.map(({ title, styles, path }, i) => (
           <NavLink key={i} styles={styles} to={path}>
             {title}

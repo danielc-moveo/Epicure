@@ -8,15 +8,15 @@ import { Wrapper as SliderWrapper } from "../collage/slider/Styles";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 100px auto 117px auto;
   background-color: white;
+  margin-bottom: 117px;
 
-  @media screen and (max-width: 1065px) {
-    margin: 71px 20px 97.6px 20px;
+  ${CollageWrapper} {
+    margin-bottom: 0;
   }
 
   ${Description} {
-    margin-bottom: 42px;
+    margin: 100px 0 42px;
     align-self: center;
   }
 
@@ -48,15 +48,14 @@ export const Wrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 900px) {
     ${Description} {
-      margin: 0 0 16px 0;
+      margin: 71px 0 16px 0;
       font-size: 0.875rem;
       letter-spacing: 0.058125rem;
     }
 
     ${CollageWrapper} {
-      margin: 0;
       ${Description} {
         font-size: 1.875rem;
         letter-spacing: 0.080625rem;
@@ -78,7 +77,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 900px) {
     ${CollageWrapper} {
       ${Description} {
         margin: 20px auto 19px 0;
@@ -93,6 +92,7 @@ export const Container = styled.div`
   display: flex;
   @media screen and (max-width: 900px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -118,7 +118,7 @@ export const ChefOfTheWeekImage = styled.div`
     background-color: rgba(255, 255, 255, 0.8);
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 450px) {
     margin: 0 0 20px 0;
     width: 334px;
     height: 239.4px;
@@ -139,7 +139,7 @@ export const ChefDescription = styled.div`
 
   @media screen and (max-width: 900px) {
     text-align: center;
-    margin: 0;
+    margin: 21.1px 0 0 0;
     font-size: 0.84375rem;
     letter-spacing: 0.065rem;
   }

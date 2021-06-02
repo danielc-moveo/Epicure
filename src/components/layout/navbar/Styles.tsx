@@ -16,7 +16,7 @@ export const LeftGroup = styled.div`
   display: flex;
   align-items: center;
 
-  & img {
+  & .logo {
     width: 33px;
     height: 33px;
   }
@@ -24,6 +24,12 @@ export const LeftGroup = styled.div`
   @media screen and (max-width: 768px) {
     margin-left: 20px;
     width: 50%;
+
+    & .logo {
+      max-width: 31px;
+      max-height: 30px;
+      margin-left: auto;
+    }
   }
 `;
 
@@ -77,17 +83,6 @@ export const RightGroupIcon = styled.img<IconProps>`
 
   @media screen and (max-width: 320px) {
     margin: 0 0 0 13px;
-  }
-`;
-
-export const Logo = styled.img`
-  width: 33px;
-  height: 33px;
-
-  @media screen and (max-width: 768px) {
-    max-width: 31px;
-    max-height: 30px;
-    margin-left: auto;
   }
 `;
 
