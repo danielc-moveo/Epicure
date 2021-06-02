@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { CardContent, Wrapper as CardWrapper } from "../../utils/card/Styles";
 import { colors, Description } from "../../utils/CommonStyles";
 import YossiImage from "../../../../utils/mock/assets/yossi.png";
-import { CardsContainer, Wrapper as CollageWrapper } from "../collage/Styles";
-import { Wrapper as SliderWrapper } from "../collage/slider/Styles";
+import { Wrapper as CollageWrapper } from "../collage/Styles";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,8 +10,13 @@ export const Wrapper = styled.div`
   background-color: white;
   margin-bottom: 117px;
 
-  ${CollageWrapper} {
-    margin-bottom: 0;
+  .carousel .slider-wrapper.axis-horizontal .slider {
+    margin: 0 !important;
+    width: 322px !important;
+  }
+
+  .carousel .slider-wrapper {
+    width: 500px !important;
   }
 
   ${Description} {
@@ -32,6 +36,7 @@ export const Wrapper = styled.div`
 
   ${CollageWrapper} {
     align-items: start;
+    margin-bottom: 0;
 
     ${Description} {
       margin: 59px auto 23px 0;
@@ -60,20 +65,6 @@ export const Wrapper = styled.div`
         font-size: 1.875rem;
         letter-spacing: 0.080625rem;
       }
-    }
-  }
-
-  @media screen and (min-width: 0px) {
-    ${CardsContainer} {
-      display: flex;
-    }
-
-    ${SliderWrapper} {
-      display: none;
-    }
-
-    ${CollageWrapper} {
-      align-items: start;
     }
   }
 

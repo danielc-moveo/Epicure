@@ -4,16 +4,10 @@ import { Wrapper } from "./Styles";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const displayCount = 1;
-
 const Slider = ({ cardsData }: SliderProps) => {
   return (
     <Wrapper>
-      <Carousel
-        centerMode={true}
-        showThumbs={false}
-        centerSlidePercentage={100 / displayCount}
-      >
+      <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay={false}>
         {cardsData.map((data, i) => (
           <CardHome key={i} {...data} />
         ))}
