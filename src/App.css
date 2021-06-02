@@ -11,12 +11,3 @@ body,
   height: 100%;
   overflow: overlay;
 }
-
-.carousel .slider-wrapper.axis-horizontal .slider {
-  margin: 0px auto !important;
-  width: 322px !important;
-}
-
-.carousel .slider-wrapper {
-  width: 600px !important;
-}

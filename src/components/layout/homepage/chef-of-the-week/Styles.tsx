@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
   background-color: white;
   margin-bottom: 117px;
 
-  .carousel .slider-wrapper.axis-horizontal .slider {
+  & .carousel .slider-wrapper.axis-horizontal .slider {
     margin: 0 !important;
-    width: 322px !important;
+    width: 231px !important;
   }
 
-  .carousel .slider-wrapper {
+  & .carousel .slider-wrapper {
     width: 500px !important;
   }
 
@@ -75,6 +75,12 @@ export const Wrapper = styled.div`
         font-size: 0.875rem;
         letter-spacing: 0.055rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & .carousel .slider-wrapper {
+      width: 270px !important;
     }
   }
 `;

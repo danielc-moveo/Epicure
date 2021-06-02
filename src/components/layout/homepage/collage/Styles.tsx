@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { CardContent } from "../../utils/card/Styles";
 import { colors, Description } from "../../utils/CommonStyles";
 import { Link as Link_ } from "react-router-dom";
@@ -84,6 +84,49 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
   }
 
   @media screen and (max-width: 1145px) {
+    & .carousel .slider-wrapper.axis-horizontal .slider {
+      width: 300px !important;
+    }
+
+    ${({ isPopularRestaurant }) =>
+      !isPopularRestaurant &&
+      css`
+        & .carousel .slider-wrapper.axis-horizontal .slider {
+          margin: 0px 150px !important;
+        }
+      `}
+
+    ${({ isPopularRestaurant }) =>
+      isPopularRestaurant &&
+      css`
+        & .carousel .slider-wrapper.axis-horizontal .slider {
+          margin: 0px auto 0 0 !important;
+        }
+
+        & .carousel .slider-wrapper {
+          width: 357px !important;
+        }
+
+        & .carousel .slider-wrapper.axis-horizontal .slider .slide {
+          margin-right: 14px !important;
+        }
+      `}
+
+  ${({ isPopularRestaurant }) =>
+      !isPopularRestaurant &&
+      css`
+        & .carousel .slider-wrapper.axis-horizontal .slider {
+          margin: 0px auto 0 0 !important;
+        }
+
+        & .carousel .slider-wrapper {
+          width: 357px !important;
+        }
+
+        & .carousel .slider-wrapper.axis-horizontal .slider .slide {
+          margin-right: 14px !important;
+        }
+      `}
     ${CardContent} {
       width: 300px;
 
@@ -107,14 +150,89 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
       margin-bottom: 15px;
     }
     ${CardContent} {
+      width: ${({ isPopularRestaurant }) =>
+        isPopularRestaurant ? "206px" : "259.2px"};
+      height: ${({ isPopularRestaurant }) =>
+        isPopularRestaurant ? "338px" : "470px"};
+
       .text-bold {
         font-size: ${({ isPopularRestaurant }) =>
           isPopularRestaurant ? "1.5625rem" : "1.725rem"};
 
         letter-spacing: ${({ isPopularRestaurant }) =>
           isPopularRestaurant ? "0.104375rem" : "0.115rem"};
+
+        margin: 25px 0 0 0;
+      }
+
+      .text {
+        font-size: ${({ isPopularRestaurant }) =>
+          isPopularRestaurant ? "20px" : "17.3px"};
+        letter-spacing: ${({ isPopularRestaurant }) =>
+          isPopularRestaurant ? "1.33px" : "1.15px"};
+        text-align: center;
+        line-height: ${({ isPopularRestaurant }) =>
+          isPopularRestaurant && "1.2px"};
+        margin: ${({ isPopularRestaurant }) =>
+          isPopularRestaurant && "9px 0 0 0"};
+      }
+
+      .main-image {
+        height: ${({ isPopularRestaurant }) =>
+          isPopularRestaurant ? "224px" : "208px"};
+      }
+
+      .icons-container {
+        bottom: 25px;
+      }
+
+      .price-container {
+        bottom: 3px;
+      }
+
+      .price {
+        margin: 0 15px;
+      }
+
+      .border-center {
+        width: 78px;
+        height: 2px;
       }
     }
+
+    ${({ isPopularRestaurant }) =>
+      isPopularRestaurant &&
+      css`
+        & .carousel .slider-wrapper.axis-horizontal .slider {
+          margin: 0px auto !important;
+          width: 206px !important;
+        }
+
+        & .carousel .slider-wrapper {
+          width: 530px !important;
+        }
+
+        & .carousel .slider-wrapper.axis-horizontal .slider .slide {
+          margin-right: 14px !important;
+        }
+      `}
+
+    ${({ isPopularRestaurant }) =>
+      !isPopularRestaurant &&
+      css`
+        & .carousel .slider-wrapper.axis-horizontal .slider {
+          margin: 0px auto !important;
+          width: 259.19px !important;
+        }
+
+        & .carousel .slider-wrapper {
+          width: 530px !important;
+        }
+
+        & .carousel .slider-wrapper.axis-horizontal .slider .slide {
+          margin-right: 14px !important;
+        }
+      `}
   }
 
   @media screen and (max-width: 425px) {

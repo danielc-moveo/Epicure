@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 const Slider = ({ cardsData }: SliderProps) => {
   return (
     <Wrapper>
-      <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay={false}>
+      <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay={false} >
         {cardsData.map((data, i) => (
           <CardHome key={i} {...data} />
         ))}
