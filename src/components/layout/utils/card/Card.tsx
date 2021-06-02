@@ -1,14 +1,8 @@
 import { iconHash } from "../assets/iconsHash";
+import { BorderCenter } from "../CommonStyles";
 import { CardContent, CardProps, Header, Container, Wrapper } from "./Styles";
 
-const Card = ({
-  header,
-  imgSrc,
-  textBold,
-  text,
-  price,
-  alerts,
-}: CardProps) => {
+const Card = ({ header, imgSrc, textBold, text, price, alerts }: CardProps) => {
   return (
     <Wrapper>
       {header && <Header className="header"> {header}</Header>}
@@ -24,9 +18,9 @@ const Card = ({
           </div>
           {price && (
             <div className="price-container">
-              <span className="border-center left" />
+              <BorderCenter />
               <span className="price"> &#8362; {`${price}`}</span>
-              <span className="border-center right" />
+              <BorderCenter />
             </div>
           )}
         </Container>

@@ -51,3 +51,33 @@ export const rightGroupIcons = [
     },
   },
 ];
+
+export const menuLinksTop = [
+  {
+    title: "Chefs",
+    path: "/",
+    className: "top",
+  },
+  {
+    title: "All Restaurants",
+    path: "/",
+    className: "top",
+  },
+];
+export const menuLinksBottom = [
+  {
+    title: "Sign in",
+    path: "/",
+    className: "bottom",
+  },
+  {
+    title: "Contact us",
+    path: "/",
+    className: "bottom",
+  },
+  {
+    title: "Terms of Use",
+    path: "/",
+    className: "bottom",
+  },
+];

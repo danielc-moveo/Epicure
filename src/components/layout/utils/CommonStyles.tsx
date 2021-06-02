@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as Link_ } from "react-router-dom";
 
 export const colors = {
   primary_black: "black",
@@ -20,3 +21,12 @@ export const Description = styled.span`
 `;
 
 export const Icon = styled.img``;
+
+export const Link = styled(Link_)``;
+
+export const BorderCenter = styled.span`
+  width: 112px;
+  height: 1px;
+  border-top: solid 0.5px ${colors.primary_grey};
+  align-self: center;
+`;

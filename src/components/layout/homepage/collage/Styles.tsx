@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { CardContent } from "../../utils/card/Styles";
-import { colors, Description } from "../../utils/CommonStyles";
+import { BorderCenter, colors, Description } from "../../utils/CommonStyles";
 import { Link as Link_ } from "react-router-dom";
 
 export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
@@ -74,13 +74,6 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
       font-size: 1.55625rem;
       margin: 0 10px;
     }
-
-    .border-center {
-      width: 112px;
-      height: 1px;
-      border-top: solid 0.5px ${colors.primary_grey};
-      align-self: center;
-    }
   }
 
   @media screen and (max-width: 1145px) {
@@ -130,7 +123,7 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
     ${CardContent} {
       width: 300px;
 
-      .border-center {
+      ${BorderCenter} {
         width: 100px;
       }
     }
@@ -194,7 +187,7 @@ export const Wrapper = styled.div<{ isPopularRestaurant: boolean }>`
         margin: 0 15px;
       }
 
-      .border-center {
+      ${BorderCenter} {
         width: 78px;
         height: 2px;
       }

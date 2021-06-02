@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { withRouter } from "react-router";
 import SearchBox from "../utils/search-box/SearchBox";
 import Hamburger from "./assets/Hamburger.svg";
@@ -12,14 +13,22 @@ import {
 } from "./Styles";
 import { iconHash } from "../utils/assets/iconsHash";
 import { Icon } from "../utils/CommonStyles";
+import Menu from "./menu/Menu";
 
 const Navbar = () => {
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
   const handleRedirect = (path: string) => {};
+
+  const handleMenuClicked = () => {
+    setIsMenuClicked((prev) => !prev);
+  };
 
   return (
     <Nav>
+      {isMenuClicked && <Menu handleMenuClicked={handleMenuClicked} />}
       <LeftGroup>
-        <HamburgerIcon src={Hamburger} />
+        <HamburgerIcon onClick={handleMenuClicked} src={Hamburger} />
         <Icon
           className="logo"
           src={iconHash["logo"]}
